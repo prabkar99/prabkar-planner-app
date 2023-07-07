@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from "axios";
 import "../styles/temp.css"
 
-export default function Temp() {
+export default function MyCustomWidget() {
     //const apiKey = "f56f24967aaf51182d1d4df628297c6d"
     const [inputCity, setInputCity] = useState("")
     const [data, setData] = useState({})

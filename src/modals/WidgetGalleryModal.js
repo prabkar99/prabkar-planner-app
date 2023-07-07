@@ -3,8 +3,8 @@ import ClockWidget from '../widgets/ClockWidget'
 import ReminderListWidget from '../widgets/ReminderListWidget'
 import TimerWidget from '../widgets/TimerWidget'
 import CalendarWidget from '../widgets/CalendarWidget'
-import BookList from '../widgets/BookList'
-import Temp from "../widgets/Temp"
+import MyCustomWidget2 from '../widgets/MyCustomWidget2'
+import MyCustomWidget from "../widgets/MyCustomWidget"
 
 export default function WidgetGalleryModal({ setShowWidgetModal, selectedWidgetArea, widgets, setWidgets }) {
   const [galleryWidgets, setGalleryWidgets] = useState([
@@ -12,8 +12,8 @@ export default function WidgetGalleryModal({ setShowWidgetModal, selectedWidgetA
     { component: <ReminderListWidget />, name: "Reminder List" },
     { component: <TimerWidget />, name: "Timer" },
     { component: <CalendarWidget />, name: "Calendar" },
-    { component: <BookList/>, name: "BookList"},
-    { component: <Temp/>, name:"Temperature"}
+    { component: <MyCustomWidget2/>, name: "BookList"},
+    { component: <MyCustomWidget/>, name:"Temperature"}
   ])
   return (
     <div className="modal"

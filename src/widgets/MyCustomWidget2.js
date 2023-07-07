@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
  
-export default function BookListWidget() {
+export default function MyCustomWidget2() {
   const [BookListData, setBookListData] = useState()
  
   useEffect(() => {
